@@ -1,0 +1,371 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!-- ImageView for hazard image -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="254dp"
+            android:layout_height="264dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvhazard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/hazardd" />
+
+        <!-- Text Views under hazard image -->
+
+        <TextView
+            android:id="@+id/tvhazard"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="Welcome to HazardHub – your go-to solution for accurate and timely property hazard data in Malaysia."
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/tvGitHub"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.686"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvGitHub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="GitHub"
+            android:textAlignment="center"
+            android:textColor="#3498db"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:onClick="openGitHubLink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvhazard" />
+
+        <TextView
+            android:id="@+id/tvCopyright"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Copyright © 2024 HazardHub"
+            android:textAlignment="center"
+            android:textColor="#0E0E0E"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvGitHub" />
+
+        <TextView
+            android:id="@+id/textViewTeamMembers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="                          Team Members"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCopyright"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewBismillah"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+        <!-- Your existing views -->
+
+        <!-- First CardView for Bismillah -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewBismillah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#C9EEF1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCopyright"
+            app:layout_constraintBottom_toTopOf="@+id/cardViewIzzah"
+            app:layout_constraintVertical_bias="0.5">
+
+            <!-- Nested layout inside CardView for Bismillah -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <!-- Centered imageView8 -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="120dp"
+                    android:layout_height="123dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:padding="5dp"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/bismillah"
+                    app:strokeColor="#3F51B5"
+                    app:strokeWidth="5dp" />
+
+                <!-- Centered TextViews -->
+                <TextView
+                    android:id="@+id/tvAnith"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="  Anith Aliah Binti Baharuddin   "
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tvClassAnith"
+                    android:layout_width="110dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="8dp"
+                    android:text="2021617562"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="RCS2405B"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Izzah -->
+        <!-- CardView for Izzah -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewIzzah"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#C9EEF1"
+
+            app:layout_constraintWidth_default="wrap"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintTop_toBottomOf="@id/cardViewBismillah"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Nested layout inside CardView for Izzah -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <!-- Centered imageView11 -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="120dp"
+                    android:layout_height="123dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:padding="5dp"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/izzah"
+                    app:strokeColor="#3F51B5"
+                    app:strokeWidth="5dp" />
+
+                <!-- Centered TextViews -->
+                <TextView
+                    android:id="@+id/tvIzzah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="      Nur Izzah Binti Asmady        "
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/tvClassIzzah"
+                    android:layout_width="110dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="8dp"
+                    android:text="2021816782"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="RCS2405B"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Misha -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewMisha"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#C9EEF1"
+            app:layout_constraintWidth_default="wrap"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintTop_toBottomOf="@id/cardViewIzzah"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Nested layout inside CardView for Misha -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <!-- Centered imageView9 -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="120dp"
+                    android:layout_height="123dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:padding="5dp"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/misha"
+                    app:strokeColor="#3F51B5"
+                    app:strokeWidth="5dp" />
+
+                <!-- Centered TextViews -->
+                <TextView
+                    android:id="@+id/tvMisha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text=" Hamisha Husna Binti Shahari   "
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/tvClassMisha"
+                    android:layout_width="110dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="8dp"
+                    android:text="2021898548"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="RCS2405B"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Mirawr -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewMirawr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#C9EEF1"
+            app:layout_constraintWidth_default="wrap"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintTop_toBottomOf="@id/cardViewMisha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"> <!-- Add this line -->
+
+            <!-- Nested layout inside CardView for Mirawr -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <!-- Centered imageView10 -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="120dp"
+                    android:layout_height="123dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:padding="5dp"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:srcCompat="@drawable/mirawr"
+                    app:strokeColor="#3F51B5"
+                    app:strokeWidth="5dp" />
+
+                <!-- Centered TextViews -->
+                <TextView
+                    android:id="@+id/tvMira"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Nur Farah Amira Binti Shahidan"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tvClassMira"
+                    android:layout_width="110dp"
+                    android:layout_height="19dp"
+                    android:layout_marginTop="8dp"
+                    android:text="2021829002"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="RCS2405B"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Include the bottom navigation layout at the end -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#E8EDEF"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_nav_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<!-- res/drawable/gradient_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="8dp" />
+    <gradient
+        android:startColor="#0077cc"
+        android:centerColor="#005599"
+        android:endColor="#003366"
+        android:type="linear"
+        android:angle="45" />
+    <stroke
+        android:width="2dp"
+        android:color="#000000" />
+    <padding
+        android:left="6dp"
+        android:right="6dp"
+        android:top="6dp"
+        android:bottom="6dp" />
+</shape>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HazardHub</string>
+    <string name="web_client_id">925465001573-hi6c72k3u96s8o2ukcr8ap858nc07rsf.apps.googleusercontent.com</string>
+    <string name="title_activity_news">HazardHub</string>
+    <string name="hello_blank_fragment">Welcome to HazardHub</string>
+    <string name="google_button_description">Your go-to solution for accurate and timely property hazard data in Malaysia.</string>
+</resources>
