@@ -55,7 +55,7 @@ public class About extends AppCompatActivity {
 
     // Method to handle opening GitHub link
     public void openGitHubLink(View view) {
-        Uri uri = Uri.parse("https://publicholidays.com.my/ms/israk-and-mikraj/");
+        Uri uri = Uri.parse("https://github.com/izzahasmady/HazardHubApp");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
